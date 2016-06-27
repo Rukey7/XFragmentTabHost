@@ -24,7 +24,7 @@ public class RippleDrawable extends Drawable implements Animatable {
     public static final int MODE_RIGHT = 3;
 
     private int mMode = MODE_MIDDLE;
-    // 前景色和背景色画笔
+    // 前景色和后景色画笔
     private Paint mPaintFront;
     private Paint mPaintBehind;
     // 用来绘制扇形的矩形框
@@ -133,5 +133,4 @@ public class RippleDrawable extends Drawable implements Animatable {
     public boolean isRunning() {
         return mValueAnimator != null && mValueAnimator.isRunning();
     }
-
 }

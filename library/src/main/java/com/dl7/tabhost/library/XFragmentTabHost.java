@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * Created by long on 2016/4/15.
- * TabHost
+ * 扩展TabHost
  */
 public class XFragmentTabHost extends FragmentTabHost {
 
@@ -98,8 +98,8 @@ public class XFragmentTabHost extends FragmentTabHost {
      */
     private View _getIndicator(TabItem item) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.tab_indicator, null);
-        ImageView imageView = (ImageView) view.findViewById(R.id.tab_imageview);
-        TextView title = (TextView) view.findViewById(R.id.tab_textview);
+        ImageView imageView = (ImageView) view.findViewById(R.id.tab_icon);
+        TextView title = (TextView) view.findViewById(R.id.tab_title);
         imageView.setImageResource(item.getImageRes());
         title.setText(item.getTitle());
         title.setTextColor(mTextInactiveColor);
@@ -163,7 +163,7 @@ public class XFragmentTabHost extends FragmentTabHost {
     private void _doRipple(int index, boolean isActivated) {
         View view = mTabViews.get(index);
         View tabView = view.findViewById(R.id.tab_layout);
-        TextView title = (TextView) view.findViewById(R.id.tab_textview);
+        TextView title = (TextView) view.findViewById(R.id.tab_title);
         if (index == 0) {
             TabAnimHelper.rippleDrawable(tabView, mFrontColor, mBehindColor, RippleDrawable.MODE_LEFT, isActivated);
         } else if (index == (mTabViews.size() - 1)){
@@ -185,8 +185,8 @@ public class XFragmentTabHost extends FragmentTabHost {
      */
     private void _doMoveToTop(int index, boolean isActivated) {
         View view = mTabViews.get(index);
-        TextView title = (TextView) view.findViewById(R.id.tab_textview);
-        ImageView icon = (ImageView) view.findViewById(R.id.tab_imageview);
+        TextView title = (TextView) view.findViewById(R.id.tab_title);
+        ImageView icon = (ImageView) view.findViewById(R.id.tab_icon);
         if (isActivated) {
             TabAnimHelper.changeTextColor(title, mTextInactiveColor, mTextActiveColor);
             TabAnimHelper.changeTextSize(title, mTextInactiveSize, mTextActiveSize);

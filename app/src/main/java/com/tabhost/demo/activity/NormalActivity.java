@@ -40,8 +40,8 @@ public class NormalActivity extends AppCompatActivity {
 
     private View _getIndicator(int index) {
         View view = LayoutInflater.from(this).inflate(R.layout.tab_indicator, null);
-        ImageView imageView = (ImageView) view.findViewById(R.id.tab_imageview);
-        TextView title = (TextView) view.findViewById(R.id.tab_textview);
+        ImageView imageView = (ImageView) view.findViewById(R.id.tab_icon);
+        TextView title = (TextView) view.findViewById(R.id.tab_title);
         imageView.setImageResource(mImageResId[index]);
         title.setText(mTabTitle[index]);
         return view;

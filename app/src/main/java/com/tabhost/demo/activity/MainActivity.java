@@ -14,19 +14,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnMove;
     private Button mBtnRipple;
     private Button mBtnClip;
-    private Button mBtnViewpager;
 
     private void assignViews() {
         mBtnNormal = (Button) findViewById(R.id.btn_normal);
         mBtnMove = (Button) findViewById(R.id.btn_move);
         mBtnRipple = (Button) findViewById(R.id.btn_ripple);
         mBtnClip = (Button) findViewById(R.id.btn_clip);
-        mBtnViewpager = (Button) findViewById(R.id.btn_view_pager);
         mBtnNormal.setOnClickListener(this);
         mBtnMove.setOnClickListener(this);
         mBtnRipple.setOnClickListener(this);
         mBtnClip.setOnClickListener(this);
-        mBtnViewpager.setOnClickListener(this);
     }
 
     @Override
@@ -50,8 +47,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_move:
                 startActivity(new Intent(MainActivity.this, MoveActivity.class));
-                break;
-            case R.id.btn_view_pager:
                 break;
         }
     }

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:id="@+id/tab_layout"
@@ -11,13 +10,13 @@
     android:background="?selectableItemBackgroundBorderless">
 
     <ImageView
-        android:id="@+id/tab_imageview"
+        android:id="@+id/tab_icon"
         android:layout_width="@dimen/tab_icon"
         android:layout_height="@dimen/tab_icon"
         android:layout_gravity="center_horizontal"/>
 
     <TextView
-        android:id="@+id/tab_textview"
+        android:id="@+id/tab_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

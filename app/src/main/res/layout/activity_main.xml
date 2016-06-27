@@ -34,10 +34,4 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="展开"/>
-
-    <Button
-        android:id="@+id/btn_view_pager"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="和ViewPager联用"/>
 </LinearLayout>

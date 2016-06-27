@@ -115,7 +115,7 @@ public class TabAnimHelper {
             }
             image.setBackgroundDrawable(scaleDrawable);
             ValueAnimator animator = ValueAnimator.ofInt(0, 10000);
-            animator.setDuration(300);
+            animator.setDuration(200);
             animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                 @Override
                 public void onAnimationUpdate(ValueAnimator animation) {
