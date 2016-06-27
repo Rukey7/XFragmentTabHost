@@ -1,10 +1,13 @@
-package com.tabhost.demo;
+package com.tabhost.demo.activity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.dl7.tabhost.library.TabItem;
 import com.dl7.tabhost.library.XFragmentTabHost;
+import com.tabhost.demo.R;
+import com.tabhost.demo.TabFragment;
 
 public class MoveActivity extends AppCompatActivity {
 
@@ -26,6 +29,7 @@ public class MoveActivity extends AppCompatActivity {
         mTabHost = (XFragmentTabHost) findViewById(android.R.id.tabhost);
         mTabHost.setup(this, getSupportFragmentManager(), R.id.relate_tab_content);
         mTabHost.setTabMode(XFragmentTabHost.TabMode.MoveToTop);
+        mTabHost.setTextActiveColor(Color.BLUE);
 
         for (int i = 0; i < mFragClass.length; i++) {
             Bundle bundle = new Bundle();

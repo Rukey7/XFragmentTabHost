@@ -1,4 +1,4 @@
-package com.tabhost.demo;
+package com.tabhost.demo.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentTabHost;
@@ -7,6 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.tabhost.demo.R;
+import com.tabhost.demo.TabFragment;
 
 public class NormalActivity extends AppCompatActivity {
 

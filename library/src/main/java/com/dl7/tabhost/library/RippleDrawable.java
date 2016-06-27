@@ -71,6 +71,7 @@ public class RippleDrawable extends Drawable implements Animatable {
             canvas.drawCircle(mHalfWidth, mHalfHeight, mRadius, mPaintFront);
         }
 
+        // 左右两边才进行扇形绘制
         if (mMode != MODE_MIDDLE) {
             mRect.left = mHalfWidth - mRadius;
             mRect.right = mHalfWidth + mRadius;

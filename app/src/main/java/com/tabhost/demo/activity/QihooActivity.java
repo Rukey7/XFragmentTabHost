@@ -1,4 +1,4 @@
-package com.tabhost.demo;
+package com.tabhost.demo.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.dl7.tabhost.library.TabItem;
 import com.dl7.tabhost.library.XFragmentTabHost;
+import com.tabhost.demo.R;
+import com.tabhost.demo.TabFragment;
 
 public class QihooActivity extends AppCompatActivity {
 

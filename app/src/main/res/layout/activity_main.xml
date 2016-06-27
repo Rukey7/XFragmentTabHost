@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.tabhost.demo.MainActivity">
+    tools:context=".activity.MainActivity">
 
     <Button
         android:id="@+id/btn_normal"
