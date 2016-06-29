@@ -78,6 +78,13 @@ public class XFragmentTabHost extends FragmentTabHost {
         }
     }
 
+    @Override
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        // 部分机型TabHost带有分割线，同一将分割线设为透明
+        getTabWidget().setDividerDrawable(android.R.color.transparent);
+    }
+
     /**
      * 添加TabItem
      * @param item  TabItem
